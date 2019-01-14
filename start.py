@@ -6,7 +6,7 @@ def start():
 		setup.setup()
 	elif y == 'n':
 		print('...')	
-	x = input('Enter Your Summoner LVL (EUW): ')
+	x = input('Enter Your Summoner NAME (EUW): ')
 	home.run(x)
 	end = input('PRESS ENTER TO LEAVE .........')
 start()
