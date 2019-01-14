@@ -2,8 +2,8 @@ import requests
 import json
 import os
 from pprint import pprint
-def run(name):
-	r = requests.get("https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name/"+name+"?api_key=RGAPI-3f52732f-3c98-4a9c-9cd3-a93cca2eb47c")
+def run(name, key):
+	r = requests.get("https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name/"+name+"?api_key="+key)
 	fx = open(name+'.json', 'x')
 	fx.write(r.text)
 	fx.close()
@@ -11,7 +11,7 @@ def run(name):
 		info = json.load(f)
 	lvl  = json.dumps(info['summonerLevel'])
 	sumid = json.dumps(info['id'])
-	ra = requests.get("https://euw1.api.riotgames.com/lol/league/v3/positions/by-summoner/"+sumid+"?api_key=RGAPI-3f52732f-3c98-4a9c-9cd3-a93cca2eb47c")
+	ra = requests.get("https://euw1.api.riotgames.com/lol/league/v3/positions/by-summoner/"+sumid+"?api_key="+key)
 	fy = open(name+'1.json','x')
 	fy.write(ra.text)
 	fy.close()
