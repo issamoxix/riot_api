@@ -32,5 +32,4 @@ class summoner :
             print('Rank : ',self.rank_data)
         
         
-# key = "RGAPI-3bc32b8b-5bc9-44fb-990b-ff963729a790"
-# summoner = summoner('taoufique',key,'euw')
+
