@@ -1,0 +1,2 @@
+RGAPI-3bc32b8b-5bc9-44fb-990b-ff963729a790
+https://euw1.api.riotgames.com/lol/league-exp/v4/entries/RANKED_SOLO_5x5/BRONZE/III?page=1?api_key=RGAPI-3bc32b8b-5bc9-44fb-990b-ff963729a790
