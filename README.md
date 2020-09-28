@@ -16,6 +16,6 @@ then clone this repository and get an api key from [Riot_Developer](https://deve
   -k K          Enter your api key *required
 ```
 ```sh
-py main.py -u username -r region/euw/na -k your_api_key
+py main.py -u username -r euw -k your_api_key
 ```
 I worked only with euw and na you can add another Regions :)
