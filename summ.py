@@ -1,7 +1,8 @@
 import ur
 import requests as req
+import argparse
 class summoner :
-    def __init__(self,name,api_key,reg):
+    def __init__(self,name,reg,api_key):
         self.name = name
         self.key = api_key
         self.reg = reg
@@ -33,3 +34,11 @@ class summoner :
         
         
 
+
+def argparser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-u' ,help='Summoner name')
+    parser.add_argument('-r','-reg' ,help='Select a region (EUW,NA)')
+    parser.add_argument('-k' ,help='Enter your api key *required ')
+    args = parser.parse_args()
+    return args
