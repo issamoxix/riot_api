@@ -18,14 +18,15 @@ class summoner :
             self.profileIconId = data['profileIconId']
             self.summonerLevel = data['summonerLevel']
             self.revisionDate = data['revisionDate']
-            rank_data = req.get_rank(self.id)
-            self.rank_d = rank_data
-            if len(rank_data) ==1:
-                self.rank_data = rank_data[0]
-                self.win_rate = str((self.rank_data['wins']*100)//(self.rank_data['wins']+self.rank_data['losses'])) +"%"
-            elif len(rank_data) ==0:
-                self.rank_data = "Unranked"
-                self.win_rate = "Unranked"
+            # rank_data = req.get_rank(self.id)
+            # self.rank_d = rank_data
+            # if len(rank_data) ==1:
+            #     self.rank_data = rank_data[0]
+            #     self.win_rate = str((self.rank_data['wins']*100)//(self.rank_data['wins']+self.rank_data['losses'])) +"%"
+            # elif len(rank_data) ==0:
+            #     self.rank_data = "Unranked"
+            #     self.win_rate = "Unranked"
+            
         except:
             print(req.error)
     def res(self):

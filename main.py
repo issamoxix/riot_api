@@ -6,5 +6,5 @@ import summ , sys
 # print(Summoner.accountId)
 league_api = summ.summoner('Summoner name','euw','api_key')
 
-solo_q=league_api.rank_data
+solo_q=league_api
 league_api.res()
