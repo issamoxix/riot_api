@@ -1,10 +1,9 @@
-import summ , sys
-# data_ = summ.argparser()
-# data = vars(data_)
-# Summoner = summ.summoner(data['u'],data['r'],data['k'])
-# Summoner.res()
-# print(Summoner.accountId)
-league_api = summ.summoner('Summoner name','euw','api_key')
+from riot_api.riot_api import RiotApi
 
-solo_q=league_api
-league_api.res()
+
+if __name__ == '__main__':
+    key = "qsdfsf=>key"
+    username = "issamoxix"
+    Riot_api =  RiotApi(key,username)
+    Riot_api.CheckKey()
+    Riot_api.getDiv()
