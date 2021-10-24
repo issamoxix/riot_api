@@ -1,10 +1,8 @@
-from riot_api.lol import lol
-
+from riot_api import lol
 
 if __name__ == '__main__':
-    key = "RGAPI-a52fab9e-1da5-43a1-b3f0-c702c938ffdd"
-    by = "id"
-    val = "svMEdXMIn49ZJskKIXlKO91EMn9I0-qsfTWjGzaPF3k5rNpU"
-    RiotApi = lol(key)
-    response = RiotApi.get_Summoner(val,by)
-    print(response)
+    RiotApi = lol(key="RGAPI-a2e33ed9-951b-49f8-aaa3-4b50687bedc9")
+    response = RiotApi.get_Summoner(value="taoufique",by="name")
+    ChampMystery = RiotApi.get_ChampionMastery(value=response['id'],get_total_score=True)
+    getRank = RiotApi.get_Rank(value=response['id'])
+    print(getRank)
