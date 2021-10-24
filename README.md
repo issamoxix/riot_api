@@ -1,2 +1,2 @@
-# riot_api *UnderConstruction* atm
+# riot_api package *UnderConstruction* atm
 
