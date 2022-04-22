@@ -1,5 +1,5 @@
-def Summby(var,by):
-    if by == 'name':
+def Summby(var, by):
+    if by == "name":
         return f"summoner/v4/summoners/by-name/{var}"
     if by == "account_id":
         return f"summoner/v4/summoners/by-account/{var}"
