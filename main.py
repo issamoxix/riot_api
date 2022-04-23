@@ -1,6 +1,6 @@
 from riot_api import lol
 
-KEY = "RGAPI-51984771-bcca-4c99-8ebe-d1db3e027353"
+KEY = "ROIT_API_KEY"
 
 
 if __name__ == "__main__":
